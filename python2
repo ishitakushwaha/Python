@@ -1,0 +1,27 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+import string
+
+
+if __name__ == '__main__':
+    n = int(input())
+    x = (bin(n))
+    x = list(map(int,(x[2:])))
+    count = [0]*len(x)
+
+    xi = 0
+    for y in range(0,len(x)):
+       
+        if(x[y]==1):
+            count[xi]+=1
+            
+        else:
+            xi+=1    
+            
+            
+    print(max(count))
